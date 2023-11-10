@@ -1,0 +1,39 @@
+:root {
+    /* Color Palette */
+    --text-primary: #2b2b2b;
+    --text-secondary: #febc11;
+    --text-grey: rgba(34, 34, 34, 0.5);
+
+    /* Backgrounds */
+    --bg-primary: rgba(255, 255, 255, 0.75);
+    --bg-black: rgba(34, 34, 34, 0.15);
+
+    /* Typography */
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-md: 16px;
+    --text-lg: 18px;
+    --text-xl: 24px;
+    --text-2xl: 40px;
+    --text-4xl: 64px;
+
+    /* Font Weights */
+    --font-normal: 400; /* Normal font weight */
+    --font-semibold: 600; /* Semi-bold font weight */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}

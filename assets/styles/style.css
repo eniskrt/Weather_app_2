@@ -1,0 +1,295 @@
+:root{
+    --text-primary: #2b2b2b;
+    --text-secondary: #febc11;
+    --text-grey: rgba(34, 34, 34, 0.5);
+    --bg-primary: rgba(255, 255, 255, 0.75);
+    --bg-black: rgba(34, 34, 34, 0.15);
+}
+/* COMMON */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    padding: 0 4rem;
+    color: var(--text-primary);
+    background-image: url("../images/bg-turquois.svg"), url("../images/bg-yellow.svg");
+    background-repeat: no-repeat;
+    background-position: right top, right bottom;
+    background-size: 60%, 50%;
+}
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight:600 ;
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size: 64px;
+}
+h5{
+    font-size: 14px;
+}
+main{
+    display: flex;
+}
+/* HEADER */
+header .menuler{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--bg-black);
+}
+header .menuler .first-menu ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+}
+header .menuler .first-menu img{
+    width: 110px;
+    height: auto;
+}
+header .menuler .second-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    font-weight: 600;
+}
+header .menuler .second-menu ul li{
+    display: flex;
+}
+header .menuler .second-menu ul li img:first-child{
+    margin-right:0.5rem ;
+    width: 12px;
+    height: auto;
+}
+header .menuler .second-menu ul li:nth-child(2) img:last-child{
+    margin-left:0.3rem ;
+    width:12px; 
+}
+header .menuler .second-menu ul li:last-child img{
+    width: 16px;
+    margin-left: 0.8rem;
+}
+header .sub-head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 12px;
+}
+header .sub-head a{
+    text-decoration: underline;
+}
+header .sub-head div:last-child{
+    display: flex;
+    font-weight: 700;
+}
+header .sub-head div:last-child img{
+    width: 13px;
+    height: auto;
+    margin-left:0.5rem;
+}
+header .sub-head div:last-child img:first-child{
+    margin-right: 0.4rem;
+}
+.menuler .first-menu .underline:not(:nth-child(1)),
+.menuler .second-menu .underline{
+    position: relative;
+        border: 0;
+
+        &:before {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 100%;
+          height: 2px;
+          content: "";
+          display: block;
+          background: var(--text-secondary);
+          transition: all 0.7s;
+          -webkit-transition: all 0.7s;
+          -moz-transition: all 0.7s;
+          -ms-transition: all 0.7s;
+          -o-transition: all 0.7s;
+      }
+        &:hover {
+          font-weight: 700;
+          cursor: pointer;
+          &:before {
+            right: 0;
+            transition: all 0.7s;
+            -webkit-transition: all 0.7s;
+            -moz-transition: all 0.7s;
+            -ms-transition: all 0.7s;
+            -o-transition: all 0.7s;
+      }
+        }
+}
+header div.sub-head div p a:hover{
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+/* SECTION LEFT */
+/* ==> first */
+section.left{
+    width: 50%;
+    height: 100vh;
+}
+section.right{
+    width: 50%;
+    height: 100vh;
+    padding-left: 12rem;
+}
+.left .title {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-bottom: 2px solid var(--bg-black);
+    width: 240px;
+}
+.left p{
+    font-size: 14px;
+    color: var(--text-grey);
+    font-weight: 600;
+}
+.left .title h4{
+    color: var(--text-secondary);
+}
+.left .sub-title{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top:1.5rem ;
+}
+.left .sub-title h5{
+    margin-top: 1rem;
+}
+/* ==> second */
+.left .second{
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    margin-top: 1.5rem;
+    width: 510px;
+    
+}
+.left .second .images{
+    display: flex;
+}
+.left .second .images .gunes-ay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+}
+.left .second .gunes-ay p{
+    font-size: 12px;
+    text-align: center;
+}
+.left .second .gunes-ay .gunes p{
+    color: var(--text-secondary);
+}
+.left .second .gunes-ay .ay p{
+    color: var(--text-primary);
+}
+.left .second .gunes-ay .gunes img{
+    width: 40px;
+    height: auto;
+}
+.left .second .gunes-ay img.arrow{
+    width: 50px;
+    position: absolute;
+    top: -25px;
+    left: 40px;
+}
+/* ==> third */
+.left .third{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.left .third .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    border-bottom:2px solid var(--bg-black);
+    color: var(--text-grey);
+    font-size: 12px;
+    line-height: 3rem;
+    width: 240px;
+}
+
+.left .third .row div:first-child{
+    display: flex;
+    align-items: center;
+}
+.left .third .row img{
+    width: 20px;
+    height: auto;
+    margin-right: 1rem;
+}
+.left .third .row img.thermo{
+    width: 13px;
+}
+/* SECTION RIGHT */
+.right img:first-child{
+    width: 550px;
+    height: auto;
+    position: relative;
+    top: -70px;
+}
+.right{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+.right h5{
+    position: absolute;
+    top: 600px;
+}
+.right .daytimes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    color: var(--text-grey);
+    position: absolute;
+    top: 675px;
+}
+.right .daytimes .times{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    border-right: 2px solid var(--bg-black);
+    padding-right: 3rem;
+}
+.right .daytimes div.times:last-child{
+    border: none;
+}
+.right .daytimes .times p:first-child{
+    font-size: 14px;
+    font-weight: 600;
+}
+.right .daytimes .times p:nth-child(2){
+    font-size: 35px;
+    font-weight: 600;
+}
+.right .daytimes .times img{
+    height: 60px;
+    width: auto;
+}
